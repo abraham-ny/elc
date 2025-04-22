@@ -50,14 +50,14 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-    color: #9E902F; /* Primary gold hover effect */
+    color: #cbb93c; /* Primary gold hover effect */
 }
 
 /* Header styles */
 header h1 {
     font-family: 'Century Gothic', Arial, sans-serif; /* Century Gothic font */
     font-size: 3rem; /* Bigger font size */
-    color: #9E902F; /* Primary gold color */
+    color: #cbb93c; /* Primary gold color */
     position: relative;
     overflow: hidden;
     display: inline-block;
@@ -82,32 +82,32 @@ header h1:hover::before {
 header p {
     font-size: 1.25rem; /* Slightly larger subtitle */
     font-weight: 500;
-    color: #61CE70; /* Primary green color */
+    color: #386e59; /* Primary green color */
 }
 
 .bg-green {
-    background-color: #228B22; /* Softer green */
+    background-color: #1b2f27; /* Softer green */
 }
 
 .bg-gold {
-    background-color: #FFC107; /* Softer gold */
+    background-color: #cbb93c; /* Softer gold */
 }
 
 .text-green {
-    color: #228B22;
+    color: #1b2f27;
 }
 
 .text-gold {
-    color: #FFC107;
+    color: #cbb93c;
 }
 
 .list-group-item a {
     text-decoration: none;
-    color: #006400;
+    color: #386e59;
 }
 
 .list-group-item a:hover {
-    color: #FFD700;
+    color: #cbb93c;
 }
 
 .navbar-brand img {
@@ -165,12 +165,12 @@ header p {
 }
 
 .badge.bg-green {
-    background-color: #61CE70; /* Primary green */
+    background-color: #386e59; /* Primary green */
     color: #FFFFFF;
 }
 
 .badge.bg-gold {
-    background-color: #9E902F; /* Primary gold */
+    background-color: #cbb93c; /* Primary gold */
     color: #FFFFFF;
 }
 
@@ -217,5 +217,5 @@ footer a {
 }
 
 footer a:hover {
-    color: #9E902F; /* Primary gold hover effect */
+    color: #cbb93c; /* Primary gold hover effect */
 }
