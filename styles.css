@@ -284,3 +284,47 @@ footer a:hover {
 }
 
 /* Waves Animation end*/
+/*new wave*/
+.audiobox{
+    height:400px;
+    width:300px;
+    background-color: transparent;
+    border-radius: 5px;
+    top:50%;
+    left:50%;
+    position:absolute;
+    transform: translate(-50%, -50%);
+  }
+  h1{
+    padding-top: 50px;
+    text-align: center;
+  }
+  .wave{
+      top: 75%;
+      left: -117%;
+      width: 1000px;
+      height: 1025px;
+      background-color: #cbb93c;
+      opacity:0.6;
+      position: absolute;
+      border-radius: 40%; 
+    }
+  .wave.one{
+    background-color: #1b2f27;
+      animation: wave 15s linear -1s infinite;
+  }
+  .wave.two{
+      animation: wave 18s linear -1s infinite;
+  }
+  .wave.three{
+      animation: wave 21s linear -1s infinite;
+  }
+  @keyframes wave{
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+  /*end new wave*/  
