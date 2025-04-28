@@ -4,7 +4,7 @@
 /* Add Century Gothic font */
 body {
     font-family: 'Century Gothic', Arial, sans-serif; /* Updated font */
-    background-color: #F9F9F9; /* Light grey background for the main page */
+    background-color: #dddddd; /* Light grey background for the main page */
     color: #333;
 }
 
