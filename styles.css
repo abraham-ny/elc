@@ -11,13 +11,16 @@ body {
 /* Navbar styles */
 .navbar {
     background-color: #6c757d; /* Updated primary color */
-    position: relative;
+    position: fixed;
     overflow: visible;
+    width: 100%;
 }
 
 .dropdown-menu {
     position: absolute; /* Ensure the dropdown is positioned correctly */
     z-index: 1050; /* Ensure it appears above other elements */
+    background-color: #cbb93c;
+    color: #FFFFFF;
 }
 
 /* Dropdown menu items */
@@ -25,6 +28,7 @@ body {
     white-space: normal; /* Allow text to wrap */
     word-wrap: break-word; /* Break long words if necessary */
     max-width: 300px; /* Optional: Set a maximum width */
+    border-bottom: 1px solid black;
 }
 
 .navbar::before {
@@ -54,6 +58,13 @@ body {
 }
 
 /* Header styles */
+header{
+    margin-top: 55px;
+    width: 100%;
+}
+#hholder{
+    width: 100%;
+}
 header h1 {
     font-family: 'Century Gothic', Arial, sans-serif; /* Century Gothic font */
     font-size: 3rem; /* Bigger font size */
@@ -66,17 +77,17 @@ header h1 {
 header h1::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: -100%;
+    top: 20;
+    left: -120%;
     width: 100%;
-    height: 100%;
+    height: 70px;
     background: linear-gradient(120deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
     transform: skewX(-20deg);
     transition: left 0.5s ease-in-out;
 }
 
 header h1:hover::before {
-    left: 100%;
+    left: 120%;
 }
 
 header p {
@@ -175,6 +186,7 @@ header p {
 }
 
 .active-card {
+    background-color: #386e59;
     border: 2px solid #FFC107; /* Highlight selected card */
 }
 
@@ -329,3 +341,7 @@ footer a:hover {
     }
   }
   /*end new wave*/  
+  .btn-green{
+    background-color: #386e59;
+    color: #cbb93c;
+  }

@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parser</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <noscript><p style="color: red;">JavaScript is not enabled. Please enable and refresh page to continue.</p></noscript>
+    <p>From the dev: Use <a href="https://miniik.netlify.app">minik (mini link) Url shortener.</a> to shorten long links for free!</p>
+    <p class="u-name">Loading...</p>
+<script>
+    function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                name: params.get("name") || "Prometheus",
+                pj: params.get("pj") || ""
+            };
+        }
+        //Baiana (Dawn Deep Remix)
+        function updateDetails() {
+            const { name, pj} = getQueryParams();
+            
+            if(name==="Martin"&&pj==="2048"){
+                //redirect
+            }else{
+                document.getElementById("u-name").innerText = name+" entered some wrong details!";
+            }
+            document.title = name;
+        }
+
+        window.onload = updateDetails;
+</script>
+</body>
+</html>
