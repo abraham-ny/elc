@@ -59,3 +59,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+function getuser(){
+    let name = prompt("Name: ", "Abraham Moruri");
+    let pj = prompt("PJ Number?", "0000");
+    window.location.href = "feedbackviewer.html?name="+name+"&pj="+pj;
+    //console.log("feedbackviewer.html?name="+name+"&pj="+pj);
+}

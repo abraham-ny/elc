@@ -56,6 +56,9 @@ body {
 .navbar-nav .nav-link:hover {
     color: #cbb93c; /* Primary gold hover effect */
 }
+.nav-link:hover{
+    font-size: large;
+}
 
 /* Header styles */
 header{
@@ -344,4 +347,11 @@ footer a:hover {
   .btn-green{
     background-color: #386e59;
     color: #cbb93c;
+  }
+  #active-page{
+    color: #cfa01e;
+    border: 1px solid goldenrod;
+    border-bottom: none;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 7px;
   }

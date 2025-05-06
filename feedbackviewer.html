@@ -3,30 +3,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parser</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <style>
+        body{
+            background-color: blue;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            user-select: none;
+        }
+        a{
+            color: aqua;
+            cursor: grab;
+        }
+        button{
+            background-color: transparent;
+            color: white;
+            border: 1px dotted white;
+            cursor: progress;
+        }
+    </style>
 </head>
 <body>
     <noscript><p style="color: red;">JavaScript is not enabled. Please enable and refresh page to continue.</p></noscript>
-    <p>From the dev: Use <a href="https://miniik.netlify.app">minik (mini link) Url shortener.</a> to shorten long links for free!</p>
-    <p class="u-name">Loading...</p>
+    <p><span style="color: red;">OOPS! </span>seems like you stumbled upon a secret passage! <b>If this was an accident please use the <a href="feedback.html">feedback page</a> to let us know.</b><br>Use <a href="https://miniik.netlify.app">minik (mini link) Url shortener.</a> to shorten long links for free!</p>
+    <p id="u-name">Loading...</p><p>However, if you believe you deserve access, <a href="feedback.html?issue=Access+to+hidden+content">let us know</a> or <button onclick="retry()">retry</button></p>
+    <p>Checkout this <a href="https://github.com/abraham-ny">GitHub Page</a> for some useful information</p>
 <script>
     function getQueryParams() {
             const params = new URLSearchParams(window.location.search);
             return {
                 name: params.get("name") || "Prometheus",
-                pj: params.get("pj") || ""
+                pj: params.get("pj") || "2025"
             };
         }
         //Baiana (Dawn Deep Remix)
         function updateDetails() {
             const { name, pj} = getQueryParams();
-            
-            if(name==="Martin"&&pj==="2048"){
-                //redirect
+            churn(name, pj);
+        }
+
+        function retry(){
+            let name = prompt("Name: ", "Abraham Moruri");
+            let pj = prompt("PJ Number:", "0000");
+            churn(name, pj);
+        }
+        function churn(lname, lpj){
+            if(lname==="Martin"&&lpj==="2048"){
+                window.location.href="google.com";
             }else{
-                document.getElementById("u-name").innerText = name+" entered some wrong details!";
+                document.getElementById("u-name").innerText = "We can't seem to find "+lname+" in our access list.";
             }
-            document.title = name;
+            document.title = lname;
         }
 
         window.onload = updateDetails;
