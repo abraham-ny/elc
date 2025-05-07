@@ -126,18 +126,6 @@ header h1 {
     display: inline-block;
 }
 
-header h1::before {
-    content: '';
-    position: absolute;
-    top: 20;
-    left: -120%;
-    width: 100%;
-    height: 70px;
-    background: linear-gradient(120deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
-    transform: skewX(-20deg);
-    transition: left 0.5s ease-in-out;
-}
-
 header h1:hover::before {
     left: 120%;
 }
@@ -402,8 +390,23 @@ footer a:hover {
   }
   #active-page{
     color: #cfa01e;
-    border: 1px solid goldenrod;
+    background-color: #cfa01e3a;
     border-bottom: none;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 7px;
+  }
+  .footlink{
+    background-color: #5d8f7cab;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  .dev{
+    color: transparent;
+  }
+  .dev:hover{
+    color: white;
+  }
+  @media screen and (max-width: 768px) {
+    .cfooter{
+        display: none;
+        visibility: hidden;
+    }
   }
