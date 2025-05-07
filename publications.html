@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ELC Service Charter - Judiciary Kenya</title>
+    <title>Publications: ELC Service Charter - Judiciary Kenya</title>
 
     <!-- Favicon -->
     <link rel="icon" href="crop-judi-logo.png" type="image/x-icon">
@@ -124,17 +124,87 @@
             z-index: 2;
             /* Ensure text is above the overlay */
         }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-left: 10px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            height: 40px;
+            max-height: 80px;
+            text-align: left;
+            font-size: 20px;
+            margin-top: 10px;
+            overflow: hidden;
+            border-bottom: 1px solid black;
+            background-color: transparent;
+        }
+
+        li:hover{
+            height: max-content;
+            z-index: inherit+1;
+            overflow: visible;
+            background-color: peru;
+        }
+
+        li>a{
+            text-decoration: none;
+            color: white;
+        }
+
+        @media screen and (max-width: 768px) {
+            .open {
+                margin: 5px;
+            }
+            .sidebar{
+                max-width: 85%;
+            }
+            #lopen{
+                display: none;
+                visibility: hidden;
+            }
+        }
     </style>
 
 </head>
 
 <body>
+    <div class="native" onclick="cls()" id="nativebg">
+        <div id="sidenav" class="sidebar">
+            <span class="close" onclick="cls()">&#9784</span>
+            <ul>
+                <li><a href="#">Surrender Of Imprest</a></li>
+                <li><a href="#">Provision Of Travel Tickets</a></li>
+                <li><a href="#">Facilitation of Visa applications for official foreign travel</a></li>
+                <li><a href="#">Facilitation of Per diem for official foreign travel</a></li>
+                <li><a href="#">Facilitation of Passport application/renewal</a></li>
+                <li><a href="#">Facilitation of reimbursement claims for medical expenses</a></li>
+                <li><a href="#">Facilitation of Payment of per diems for Circuits / Benches / Judgement Writing/Part-Heard / Service Week or other official activities.</a></li>
+                <li><a href="#">Reimbursement of utility bills</a></li>
+                <li><a href="#">Facilitation of movers services</a></li>
+                <li><a href="#">Facilitation of transfer allowances</a></li>
+                <li><a href="#">Handling of request for drivers and ushers</a></li>
+                <li><a href="#">Request for judicial staff</a></li>
+                <li><a href="#">Facilitate Replacement/Repair of Vehicles</a></li>
+                <li><a href="#">Handling Inquiries oral/written</a></li>
+            </ul>
+        </div>
+    </div>
+
     <!-- Ayazizela Jazzbee Reworks! -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-green sticky-top shadow">
         <div class="container-fluid">
-            <a class="navbar-brand d-flex align-items-center" href="#" onclick="getuser()">
+            <span class="open" id="lopen" onclick="opn()">Contents</span>
+            <span class="open" onclick="opn()"><button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button></span>
+            <a class="navbar-brand d-flex align-items-center" id="t-brand" href="#" onclick="getuser()">
                 <img src="crop-judi-logo.png" alt="Logo" height="30" class="me-2">
-                <span>ELC Service Charter</span>
+                <span>Publications</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -181,17 +251,7 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
 
-    <header class="text-center mb-4 header-bg container-fluid">
-        <h1 class="text-gold">ELC Service Charter</h1>
-        <p class="text-green">Empowering Justice with Transparency</p>
-        <p class="tagline mt-3">
-            THE PURPOSE OF THIS CHARTER IS TO OUTLINE THE SERVICE STANDARDS EXPECTED FROM THIS DIRECTORATE, WE ARE
-            COMMITTED TO PROVIDING QUALITY SERVICES THAT MEET OUR CUSTOMERS NEEDS, WE ENDEAVOUR TO SERVE WITH
-            INTEGRITY, IMPARTIALITY AND HUMILITY
-        </p>
-    </header>
 
     <div class="container my-4">
         <div class="row">
@@ -233,9 +293,6 @@
 
             <!-- Main Content Column -->
             <div class="col-md-9">
-                <!-- Your existing content cards go here -->
-
-
                 <div class="row">
 
                     <!-- Surrender of Imprest -->
@@ -472,38 +529,46 @@
             </div>
         </div>
     </div>
-
-        <!-- Footer -->
-        <footer class="bg-green text-white py-4 container-fluid">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <h5>Contact</h5>
-                        <p>Phone: +254798681537</p>
-                        <p>Email: <a href="mailto:abraham.moruri1@gmail.com" class="text-white">Contact
-                                Developer</a></p>
-                    </div>
-                    <div class="col-md-4">
-                        <h5>About</h5>
-                        <p>Learn more about ELC and its mission to empower justice with transparency.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <h5>Downloads</h5>
-                        <p>Access important documents and resources.
-                            <a download href="ORELC.pdf" class="text-white">Download Here</a>
-                        </p>
-                    </div>
+    <!-- Footer -->
+    <footer class="bg-green text-white py-4 container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contact</h5>
+                    <p>Phone: +254798681537</p>
+                    <p>Email: <a href="mailto:abraham.moruri1@gmail.com" class="text-white">Contact
+                            Developer</a></p>
                 </div>
-                <div class="text-center mt-3">
-                    <p>&copy; 2025 ELC Judiciary. All rights reserved.</p>
+                <div class="col-md-4">
+                    <h5>About</h5>
+                    <p>Learn more about ELC and its mission to empower justice with transparency.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Downloads</h5>
+                    <p>Access important documents and resources.
+                        <a download href="ORELC.pdf" class="text-white">Download Here</a>
+                    </p>
                 </div>
             </div>
-        </footer>
+            <div class="text-center mt-3">
+                <p>&copy; 2025 ELC Judiciary. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-        <!-- Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="script.js"></script>
-        
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        function opn() {
+            document.getElementById("sidenav").style.width = "85%";
+            document.getElementById("nativebg").style.width = "100%";
+        }
+        function cls() {
+            document.getElementById("sidenav").style.width = "0";
+            document.getElementById("nativebg").style.width = "0";
+        }
+    </script>
 </body>
 
 </html>
